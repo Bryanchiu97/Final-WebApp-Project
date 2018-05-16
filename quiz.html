@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>7SEAS</title>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <img src="imgs/logo.svg" id="logo"/>
+        
+        <div id="menu"><i id="icon" class="fa fa-bars"></i></div>
+        
+        <div id="myNav">
+            <a class="page" href="index.html">Home</a>
+            <a class="page" href="japan.html">Japan</a>
+            <a class="page" href="italy.html">Italy</a>
+            <a class="page" href="australia.html">Australia</a>
+            <a class="page" href="southkorea.html">Korea</a>
+            <a class="page" href="mexico.html">Mexico</a>
+            <a class="page" href="quiz.html">Quiz</a>
+            <a class="page" id="close">Close</a>
+        </div>
+    
+        <div id="display">
+            <img src="imgs/map1.svg" id="worldMap"/>
+            <div id="wrapper">
+                <h1 id="quizTitle">Travel Quiz</h1>
+                
+                <div id="question1">
+                    <p class="q">What is the capital of South Korea?</p><br/>
+                    <input type="radio" name="q1" id="a1"/>Busan<br/>
+                    <input type="radio" name="q1" id="a2"/>Seoul<br/>
+                    <input type="radio" name="q1" id="a3"/>Gwangju<br/>
+                    <input type="radio" name="q1" id="a4"/>Daegu<br/>
+                </div>
+                    
+                <div id="question2">
+                    <p class="q">What is the giant rock in Australia called?</p><br/>
+                    <input type="radio" name="q2" id="a5"/>Hotham<br/>
+                    <input type="radio" name="q2" id="a6"/>Bindo<br/>
+                    <input type="radio" name="q2" id="a7"/>Uluru<br/>
+                    <input type="radio" name="q2" id="a8"/>Boyce<br/>
+                </div>
+                    
+                <div id="question3">
+                    <p class="q">What is the famous tower in Itally called?</p><br/>
+                    <input type="radio" name="q3" id="a9"/>Palazzo Pitti<br/>
+                    <input type="radio" name="q3" id="a10"/>Colosseum<br/>
+                    <input type="radio" name="q3" id="a11"/>Pantheon<br/>
+                    <input type="radio" name="q3" id="a12"/>Leaning Tower of Pisa<br/>
+                </div>
+                    
+                <div id="question4">
+                    <p class="q">Who built the ancient temples in Mexico?</p><br/>
+                    <input type="radio" name="q4" id="a13"/>Mayans<br/>
+                    <input type="radio" name="q4" id="a14"/>Inuits<br/>
+                    <input type="radio" name="q4" id="a15"/>Mesopotamians<br/>
+                    <input type="radio" name="q4" id="a16"/>Nazca<br/>
+                </div>
+                    
+                <div id="question5">
+                    <p class="q">What is the main ingredient in sushi?</p><br/>
+                    <input type="radio" name="q5" id="a17"/>Raw seafood<br/>
+                    <input type="radio" name="q5" id="a18"/>Rice<br/>
+                    <input type="radio" name="q5" id="a19"/>Seaweed<br/>
+                    <input type="radio" name="q5" id="a20"/>Wasabi<br/>
+                </div>
+                
+                <button id="submitQuiz">Submit</button>
+            </div>
+        </div>
+        
+        <script src="index3.js"></script>
+        
+    </body>
+</html>

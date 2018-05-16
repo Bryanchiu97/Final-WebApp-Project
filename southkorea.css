@@ -1,0 +1,455 @@
+#screen {
+    position:relative;
+    background-color: white;
+    height: 100vh;
+    opacity: .7;
+}
+
+#button {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#welcomeSK {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  top: 50%;
+  margin-top: -80px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 92px;
+  color: black;
+}
+
+#menu {
+    position: absolute;
+    right: 15px;
+    transition: opacity 1s;
+}
+
+
+#icon {
+    font-size: 35pt;
+    color: #FF9707;
+}
+
+#icon:hover {
+    color: #FFFFFF;
+}
+
+
+body {
+    background-color: #29ABE2;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+#worldMap {
+    position: absolute;
+    top: 0px;
+    bottom: 75px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 9vw;
+    transition: transform .5s;
+    animation: 1.5s linear 0s 1 fadeIn;
+}
+
+#worldMap:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+#flag {
+    position: absolute;
+    top: 0px;
+    bottom: 600px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 15vw;
+    transition: transform .5s;
+    animation: 1.5s linear 0s 1 fadeIn; 
+}
+
+#flag:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+
+#buildings {
+    position: absolute;
+    top: inherit;
+    bottom: 0px;
+    left: inherit;
+    right: inherit;
+    margin: 0px;
+    width: 99vw;
+    z-index: -1;
+    animation: 1.5s linear 0s 1 fadeIn; 
+}
+
+
+#tower {
+    position: absolute;
+    top: inherit;
+    bottom: 0px;
+    left: 200px;
+    right: inherit;
+    margin: 0px;
+    width: 7vw;
+    z-index: -1;
+    transition: transform .5s;
+    animation: 1.5s linear 0s 1 fadeIn; 
+}
+
+#tower:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+#building1 {
+    position: absolute;
+    top: inherit;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 25vw;
+    transition: transform .5s;
+    animation: 1.5s linear 0s 1 fadeIn;
+}
+
+#building1:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+
+#building2 {
+    position: absolute;
+    top: inherit;
+    bottom: 0px;
+    left: inherit;
+    right: 200px;
+    margin: 0px;
+    width: 20vw;
+    z-index: -1;
+    transition: transform .5s;
+    animation: 1.5s linear 0s 1 fadeIn; 
+}
+
+#building2:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+
+#cloud1 {
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    left: 150px;
+    right: 0px;
+    margin: 0px;
+    width: 8vw;
+    animation: 1.5s linear 0s 1 fadeIn;
+}
+
+
+#cloud2 {
+    position: absolute;
+    top: 300px;
+    bottom: 0px;
+    left: 400px;
+    right: 0px;
+    margin: 0px;
+    width: 8vw;
+    animation: 1.5s linear 0s 1 fadeIn;
+}
+
+
+#cloud3 {
+    position: absolute;
+    top: 150px;
+    bottom: 0px;
+    left: inherit;
+    right: 500px;
+    margin: 0px;
+    width: 8vw;
+    animation: 1.5s linear 0s 1 fadeIn;
+}
+
+
+#cloud4 {
+    position: absolute;
+    top: 350px;
+    bottom: 0px;
+    left: inherit;
+    right: 300px;
+    margin: 0px;
+    width: 8vw;
+    animation: 1.5s linear 0s 1 fadeIn;
+}
+
+
+
+
+
+#logo {
+    position: absolute;
+    height: 35px;
+    top: 15px;
+    left: 15px;
+}
+
+#myNav {
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.page {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.page:hover {
+    color: #FF9707;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    font-family: 'Roboto',sans-serif;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#Header {
+    font-family: 'Roboto',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#pic1{
+    height: 200px;
+    width: auto;
+}
+
+
+
+
+
+/* Animations */
+
+
+
+
+
+
+*{ margin: 0; padding: 0;}
+
+body {
+	overflow: hidden;
+}
+
+#movingClouds{
+	padding: 100px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+
+#cloud1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+
+
+
+#cloud2 {
+	left: -100px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; 
+	
+
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+
+
+#cloud3 {
+	left: 300px; top: 250px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8;
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+#cloud4 {
+	left: 100px; top: 350px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; 
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+
+
